@@ -3,7 +3,7 @@ import { BLOG_POSTS } from '@/lib/blog-data';
 import { AUDIO_FORMATS } from '@/lib/format-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://mediaconvert.io';
+  const baseUrl = 'https://mediaconvert.toolbay.site';
 
   // Base static routes
   const staticRoutes: MetadataRoute.Sitemap = [
