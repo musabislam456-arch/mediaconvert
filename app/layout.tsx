@@ -4,6 +4,7 @@ import {Navbar} from '@/components/Navbar';
 import {Footer} from '@/components/Footer';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mediaconvert.toolbay.site'),
   title: 'MediaConvert — Fast Audio & Video Utility Suite (Client-Side)',
   description:
     'Modern client-side audio and video utility suite. Fast format conversion, precision video trimming, waveform inspection, transcription notes, and creator guides.',
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     description:
       'Client-side audio & video converter, video trimmer, waveform analyzer, and creator format guides.',
     type: 'website',
-    url: 'https://mediaconvert.io',
+    url: 'https://mediaconvert.toolbay.site',
     siteName: 'MediaConvert',
   },
   twitter: {
@@ -54,4 +55,3 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
     </html>
   );
 }
-
