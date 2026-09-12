@@ -1,0 +1,57 @@
+import type {Metadata} from 'next';
+import './globals.css';
+import {Navbar} from '@/components/Navbar';
+import {Footer} from '@/components/Footer';
+
+export const metadata: Metadata = {
+  title: 'MediaConvert — Fast Audio & Video Utility Suite (Client-Side)',
+  description:
+    'Modern client-side audio and video utility suite. Fast format conversion, precision video trimming, waveform inspection, transcription notes, and creator guides.',
+  keywords: [
+    'audio converter',
+    'video trimmer',
+    'mp3 converter',
+    'wav to mp3',
+    'ogg to mp3',
+    'client side audio converter',
+    'audio transcription notes',
+    'podcast audio format',
+    'video compression',
+  ],
+  authors: [{name: 'MediaConvert Systems'}],
+  creator: 'MediaConvert',
+  openGraph: {
+    title: 'MediaConvert — Fast Audio & Video Utility Suite',
+    description:
+      'Client-side audio & video converter, video trimmer, waveform analyzer, and creator format guides.',
+    type: 'website',
+    url: 'https://mediaconvert.io',
+    siteName: 'MediaConvert',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MediaConvert — Fast Audio & Video Utility Suite',
+    description:
+      'Client-side audio & video converter, video trimmer, waveform analyzer, and creator format guides.',
+  },
+};
+
+export default function RootLayout({children}: {children: React.ReactNode}) {
+  return (
+    <html lang="en" className="dark">
+      <body
+        suppressHydrationWarning
+        className="bg-[#090d16] text-slate-100 min-h-screen antialiased selection:bg-cyan-500/30 selection:text-cyan-200 flex flex-col"
+      >
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
+
+        {/* CHATBOT_SCRIPT_START */}
+        {/* Paste client's chatbot <script> embed code here */}
+        {/* CHATBOT_SCRIPT_END */}
+      </body>
+    </html>
+  );
+}
+
