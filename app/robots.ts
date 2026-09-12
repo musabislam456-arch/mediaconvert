@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://mediaconvert.io/sitemap.xml',
+    sitemap: 'https://mediaconvert.toolbay.site/sitemap.xml',
   };
 }
