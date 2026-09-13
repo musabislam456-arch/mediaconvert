@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     description:
       'Client-side audio & video converter, video trimmer, waveform analyzer, and creator format guides.',
   },
+  verification: {
+    google: '8dLMBNTBkGFQ3zq4GYwdQbjC1ciAalZ87g56dZR1mks',
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
